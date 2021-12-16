@@ -1,0 +1,991 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		724619361A89875ABF5C4951 /* Pods_ProyectoPersonalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA33502477A4B2953FAE8F3 /* Pods_ProyectoPersonalTests.framework */; };
+		90B87C8D268F88C3BF03787F /* Pods_ProyectoPersonal_ProyectoPersonalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6649FBC51005069BD798A4 /* Pods_ProyectoPersonal_ProyectoPersonalUITests.framework */; };
+		B00E67D0C4EF76C1AF560411 /* Pods_ProyectoPersonal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822EA6FAFD432BB1DC5FF3D9 /* Pods_ProyectoPersonal.framework */; };
+		F14BDDBC273567EC001B6A22 /* AudioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14BDDBB273567EB001B6A22 /* AudioPlayerViewController.swift */; };
+		F174C854276A1713008063E1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F174C852276A1713008063E1 /* Model.xcdatamodeld */; };
+		F174C858276A9C68008063E1 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F174C857276A9C68008063E1 /* UIView+extension.swift */; };
+		F174C85A276AB3E8008063E1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F174C859276AB3E8008063E1 /* LoginViewModel.swift */; };
+		F19F9BE92750058E00AA742F /* UIButton+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19F9BE82750058E00AA742F /* UIButton+extension.swift */; };
+		F19F9BEB27500D5100AA742F /* UILabel+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19F9BEA27500D5100AA742F /* UILabel+extension.swift */; };
+		F19F9BED275556B800AA742F /* PlayListDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19F9BEC275556B800AA742F /* PlayListDetailController.swift */; };
+		F19F9BEF27555E6300AA742F /* TracksPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19F9BEE27555E6300AA742F /* TracksPickerView.swift */; };
+		F1A45C172722F4BB00468C00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A45C162722F4BB00468C00 /* AppDelegate.swift */; };
+		F1A45C192722F4BB00468C00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A45C182722F4BB00468C00 /* SceneDelegate.swift */; };
+		F1A45C1B2722F4BB00468C00 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A45C1A2722F4BB00468C00 /* LoginViewController.swift */; };
+		F1A45C1E2722F4BB00468C00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A45C1C2722F4BB00468C00 /* Main.storyboard */; };
+		F1A45C212722F4BB00468C00 /* ProyectoPersonal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1A45C1F2722F4BB00468C00 /* ProyectoPersonal.xcdatamodeld */; };
+		F1A45C262722F4BE00468C00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A45C242722F4BE00468C00 /* LaunchScreen.storyboard */; };
+		F1A45C312722F4BF00468C00 /* ProyectoPersonalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A45C302722F4BF00468C00 /* ProyectoPersonalTests.swift */; };
+		F1A45C3B2722F4BF00468C00 /* ProyectoPersonalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A45C3A2722F4BF00468C00 /* ProyectoPersonalUITests.swift */; };
+		F1A45C3D2722F4BF00468C00 /* ProyectoPersonalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A45C3C2722F4BF00468C00 /* ProyectoPersonalUITestsLaunchTests.swift */; };
+		F1A6AEBF272C216A00EFAFDD /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A6AEBE272C216A00EFAFDD /* WelcomeViewController.swift */; };
+		F1A6AEC1272C341900EFAFDD /* Modelos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A6AEC0272C341900EFAFDD /* Modelos.swift */; };
+		F1B62B5C27628A7100A61F7F /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B62B5B27628A7100A61F7F /* DownloadManager.swift */; };
+		F1C474FB275E9303008D39D5 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C474FA275E9303008D39D5 /* UIViewController+extension.swift */; };
+		F1C474FD275EA4BD008D39D5 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C474FC275EA4BD008D39D5 /* String+extension.swift */; };
+		F1E2A82E27331C6C003CCB89 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2A82D27331C6C003CCB89 /* TableViewController.swift */; };
+		F1E2A8302734684B003CCB89 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2A82F2734684B003CCB89 /* Protocols.swift */; };
+		F1E2A83227348593003CCB89 /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2A83127348593003CCB89 /* TrackTableViewCell.swift */; };
+		F1EEF42B273D9A5E00FF062D /* animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EEF429273D9A5D00FF062D /* animatedGIF.m */; };
+		F1EEF42D273D9EB100FF062D /* animacion.gif in Resources */ = {isa = PBXBuildFile; fileRef = F1EEF42C273D9EB100FF062D /* animacion.gif */; };
+		F1EEF42F273DB0A700FF062D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1EEF42E273DB0A700FF062D /* Assets.xcassets */; };
+		F1EEF45B27443DA500FF062D /* ukulele.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1EEF45A27443DA500FF062D /* ukulele.mp3 */; };
+		F1EEF4612746D00B00FF062D /* AudioPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = F1EEF4602746D00B00FF062D /* AudioPlayer */; };
+		F1EEF4632746D84500FF062D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEF4622746D84500FF062D /* DataManager.swift */; };
+		F1EEF4662746E87300FF062D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEF4652746E87300FF062D /* APIManager.swift */; };
+		F1EEF490274D13C300FF062D /* CurrentSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEF48F274D13C300FF062D /* CurrentSong.swift */; };
+		F1EEF493274D6CEE00FF062D /* ButtonFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEF492274D6CEE00FF062D /* ButtonFunc.swift */; };
+		F1F395CF276918D500675E4C /* RestServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F395CE276918D500675E4C /* RestServiceManager.swift */; };
+		F1FC23452729F17A004DF7EB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC23442729F17A004DF7EB /* RegisterViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1A45C2D2722F4BF00468C00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A45C0B2722F4BB00468C00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1A45C122722F4BB00468C00;
+			remoteInfo = ProyectoPersonal;
+		};
+		F1A45C372722F4BF00468C00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A45C0B2722F4BB00468C00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1A45C122722F4BB00468C00;
+			remoteInfo = ProyectoPersonal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C6649FBC51005069BD798A4 /* Pods_ProyectoPersonal_ProyectoPersonalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectoPersonal_ProyectoPersonalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33910A908AC887D9C12CFD1B /* Pods-ProyectoPersonalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoPersonalTests.debug.xcconfig"; path = "Target Support Files/Pods-ProyectoPersonalTests/Pods-ProyectoPersonalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		56C141764AEA38105E27AC18 /* Pods-ProyectoPersonal-ProyectoPersonalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoPersonal-ProyectoPersonalUITests.debug.xcconfig"; path = "Target Support Files/Pods-ProyectoPersonal-ProyectoPersonalUITests/Pods-ProyectoPersonal-ProyectoPersonalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F3F9677535E768CAB523A1D /* Pods-ProyectoPersonalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoPersonalTests.release.xcconfig"; path = "Target Support Files/Pods-ProyectoPersonalTests/Pods-ProyectoPersonalTests.release.xcconfig"; sourceTree = "<group>"; };
+		822EA6FAFD432BB1DC5FF3D9 /* Pods_ProyectoPersonal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectoPersonal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA33502477A4B2953FAE8F3 /* Pods_ProyectoPersonalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectoPersonalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98C392E32FE68C547CE0D1BF /* Pods-ProyectoPersonal-ProyectoPersonalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoPersonal-ProyectoPersonalUITests.release.xcconfig"; path = "Target Support Files/Pods-ProyectoPersonal-ProyectoPersonalUITests/Pods-ProyectoPersonal-ProyectoPersonalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BFC573476F387867A20D600E /* Pods-ProyectoPersonal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoPersonal.debug.xcconfig"; path = "Target Support Files/Pods-ProyectoPersonal/Pods-ProyectoPersonal.debug.xcconfig"; sourceTree = "<group>"; };
+		F12BAF4CE7E36CD783580A08 /* Pods-ProyectoPersonal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoPersonal.release.xcconfig"; path = "Target Support Files/Pods-ProyectoPersonal/Pods-ProyectoPersonal.release.xcconfig"; sourceTree = "<group>"; };
+		F14BDDBB273567EB001B6A22 /* AudioPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewController.swift; sourceTree = "<group>"; };
+		F174C853276A1713008063E1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F174C857276A9C68008063E1 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		F174C859276AB3E8008063E1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F19F9BE82750058E00AA742F /* UIButton+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+extension.swift"; sourceTree = "<group>"; };
+		F19F9BEA27500D5100AA742F /* UILabel+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+extension.swift"; sourceTree = "<group>"; };
+		F19F9BEC275556B800AA742F /* PlayListDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListDetailController.swift; sourceTree = "<group>"; };
+		F19F9BEE27555E6300AA742F /* TracksPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksPickerView.swift; sourceTree = "<group>"; };
+		F1A45C132722F4BB00468C00 /* ProyectoPersonal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoPersonal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A45C162722F4BB00468C00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1A45C182722F4BB00468C00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F1A45C1A2722F4BB00468C00 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F1A45C1D2722F4BB00468C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1A45C202722F4BB00468C00 /* ProyectoPersonal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProyectoPersonal.xcdatamodel; sourceTree = "<group>"; };
+		F1A45C252722F4BE00468C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1A45C272722F4BE00468C00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A45C2C2722F4BF00468C00 /* ProyectoPersonalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectoPersonalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A45C302722F4BF00468C00 /* ProyectoPersonalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoPersonalTests.swift; sourceTree = "<group>"; };
+		F1A45C362722F4BF00468C00 /* ProyectoPersonalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectoPersonalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A45C3A2722F4BF00468C00 /* ProyectoPersonalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoPersonalUITests.swift; sourceTree = "<group>"; };
+		F1A45C3C2722F4BF00468C00 /* ProyectoPersonalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoPersonalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F1A6AEBE272C216A00EFAFDD /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F1A6AEC0272C341900EFAFDD /* Modelos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelos.swift; sourceTree = "<group>"; };
+		F1B62B5B27628A7100A61F7F /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		F1C474FA275E9303008D39D5 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
+		F1C474FC275EA4BD008D39D5 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		F1E2A82D27331C6C003CCB89 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		F1E2A82F2734684B003CCB89 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		F1E2A83127348593003CCB89 /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		F1EEF428273D9A5D00FF062D /* ProyectoPersonal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProyectoPersonal-Bridging-Header.h"; sourceTree = "<group>"; };
+		F1EEF429273D9A5D00FF062D /* animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = animatedGIF.m; sourceTree = "<group>"; };
+		F1EEF42A273D9A5E00FF062D /* animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = animatedGIF.h; sourceTree = "<group>"; };
+		F1EEF42C273D9EB100FF062D /* animacion.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animacion.gif; sourceTree = "<group>"; };
+		F1EEF42E273DB0A700FF062D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1EEF45A27443DA500FF062D /* ukulele.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ukulele.mp3; sourceTree = "<group>"; };
+		F1EEF4622746D84500FF062D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F1EEF4652746E87300FF062D /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F1EEF48F274D13C300FF062D /* CurrentSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSong.swift; sourceTree = "<group>"; };
+		F1EEF492274D6CEE00FF062D /* ButtonFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFunc.swift; sourceTree = "<group>"; };
+		F1F395CE276918D500675E4C /* RestServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServiceManager.swift; sourceTree = "<group>"; };
+		F1FC23442729F17A004DF7EB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1A45C102722F4BB00468C00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1EEF4612746D00B00FF062D /* AudioPlayer in Frameworks */,
+				B00E67D0C4EF76C1AF560411 /* Pods_ProyectoPersonal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A45C292722F4BF00468C00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724619361A89875ABF5C4951 /* Pods_ProyectoPersonalTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A45C332722F4BF00468C00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90B87C8D268F88C3BF03787F /* Pods_ProyectoPersonal_ProyectoPersonalUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF96C40A5A3EC788835093AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFC573476F387867A20D600E /* Pods-ProyectoPersonal.debug.xcconfig */,
+				F12BAF4CE7E36CD783580A08 /* Pods-ProyectoPersonal.release.xcconfig */,
+				56C141764AEA38105E27AC18 /* Pods-ProyectoPersonal-ProyectoPersonalUITests.debug.xcconfig */,
+				98C392E32FE68C547CE0D1BF /* Pods-ProyectoPersonal-ProyectoPersonalUITests.release.xcconfig */,
+				33910A908AC887D9C12CFD1B /* Pods-ProyectoPersonalTests.debug.xcconfig */,
+				5F3F9677535E768CAB523A1D /* Pods-ProyectoPersonalTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F174C856276A9683008063E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F1EEF42E273DB0A700FF062D /* Assets.xcassets */,
+				F1EEF42C273D9EB100FF062D /* animacion.gif */,
+				F1EEF45A27443DA500FF062D /* ukulele.mp3 */,
+				F1EEF42A273D9A5E00FF062D /* animatedGIF.h */,
+				F1EEF429273D9A5D00FF062D /* animatedGIF.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F1A45C0A2722F4BB00468C00 = {
+			isa = PBXGroup;
+			children = (
+				F1A45C152722F4BB00468C00 /* ProyectoPersonal */,
+				F1A45C2F2722F4BF00468C00 /* ProyectoPersonalTests */,
+				F1A45C392722F4BF00468C00 /* ProyectoPersonalUITests */,
+				F1A45C142722F4BB00468C00 /* Products */,
+				EF96C40A5A3EC788835093AF /* Pods */,
+				FEF33F62C50BF7511943FFB7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1A45C142722F4BB00468C00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1A45C132722F4BB00468C00 /* ProyectoPersonal.app */,
+				F1A45C2C2722F4BF00468C00 /* ProyectoPersonalTests.xctest */,
+				F1A45C362722F4BF00468C00 /* ProyectoPersonalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1A45C152722F4BB00468C00 /* ProyectoPersonal */ = {
+			isa = PBXGroup;
+			children = (
+				F1F395CD2769058200675E4C /* Controllers */,
+				F1EEF4642746E85200FF062D /* Utils */,
+				F1B62B7D2763AE1000A61F7F /* Models */,
+				F1EEF48E274D13A200FF062D /* Views */,
+				F174C856276A9683008063E1 /* Resources */,
+				F1A45C1C2722F4BB00468C00 /* Main.storyboard */,
+				F1A45C242722F4BE00468C00 /* LaunchScreen.storyboard */,
+				F1A45C162722F4BB00468C00 /* AppDelegate.swift */,
+				F1A45C182722F4BB00468C00 /* SceneDelegate.swift */,
+				F1E2A83127348593003CCB89 /* TrackTableViewCell.swift */,
+				F19F9BEE27555E6300AA742F /* TracksPickerView.swift */,
+				F1A45C272722F4BE00468C00 /* Info.plist */,
+				F1A45C1F2722F4BB00468C00 /* ProyectoPersonal.xcdatamodeld */,
+				F1EEF428273D9A5D00FF062D /* ProyectoPersonal-Bridging-Header.h */,
+			);
+			path = ProyectoPersonal;
+			sourceTree = "<group>";
+		};
+		F1A45C2F2722F4BF00468C00 /* ProyectoPersonalTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1A45C302722F4BF00468C00 /* ProyectoPersonalTests.swift */,
+			);
+			path = ProyectoPersonalTests;
+			sourceTree = "<group>";
+		};
+		F1A45C392722F4BF00468C00 /* ProyectoPersonalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1A45C3A2722F4BF00468C00 /* ProyectoPersonalUITests.swift */,
+				F1A45C3C2722F4BF00468C00 /* ProyectoPersonalUITestsLaunchTests.swift */,
+			);
+			path = ProyectoPersonalUITests;
+			sourceTree = "<group>";
+		};
+		F1B62B7D2763AE1000A61F7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F174C852276A1713008063E1 /* Model.xcdatamodeld */,
+				F1A6AEC0272C341900EFAFDD /* Modelos.swift */,
+				F174C859276AB3E8008063E1 /* LoginViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1EEF4642746E85200FF062D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F1E2A82F2734684B003CCB89 /* Protocols.swift */,
+				F1EEF4652746E87300FF062D /* APIManager.swift */,
+				F1EEF492274D6CEE00FF062D /* ButtonFunc.swift */,
+				F1EEF4622746D84500FF062D /* DataManager.swift */,
+				F1B62B5B27628A7100A61F7F /* DownloadManager.swift */,
+				F1F395CE276918D500675E4C /* RestServiceManager.swift */,
+				F1C474FC275EA4BD008D39D5 /* String+extension.swift */,
+				F19F9BE82750058E00AA742F /* UIButton+extension.swift */,
+				F19F9BEA27500D5100AA742F /* UILabel+extension.swift */,
+				F1C474FA275E9303008D39D5 /* UIViewController+extension.swift */,
+				F174C857276A9C68008063E1 /* UIView+extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F1EEF48E274D13A200FF062D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1EEF48F274D13C300FF062D /* CurrentSong.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1F395CD2769058200675E4C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1A45C1A2722F4BB00468C00 /* LoginViewController.swift */,
+				F1E2A82D27331C6C003CCB89 /* TableViewController.swift */,
+				F14BDDBB273567EB001B6A22 /* AudioPlayerViewController.swift */,
+				F1A6AEBE272C216A00EFAFDD /* WelcomeViewController.swift */,
+				F1FC23442729F17A004DF7EB /* RegisterViewController.swift */,
+				F19F9BEC275556B800AA742F /* PlayListDetailController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FEF33F62C50BF7511943FFB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				822EA6FAFD432BB1DC5FF3D9 /* Pods_ProyectoPersonal.framework */,
+				0C6649FBC51005069BD798A4 /* Pods_ProyectoPersonal_ProyectoPersonalUITests.framework */,
+				8DA33502477A4B2953FAE8F3 /* Pods_ProyectoPersonalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1A45C122722F4BB00468C00 /* ProyectoPersonal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A45C402722F4BF00468C00 /* Build configuration list for PBXNativeTarget "ProyectoPersonal" */;
+			buildPhases = (
+				3049CAAD1A115A537154873E /* [CP] Check Pods Manifest.lock */,
+				F1A45C0F2722F4BB00468C00 /* Sources */,
+				F1A45C102722F4BB00468C00 /* Frameworks */,
+				F1A45C112722F4BB00468C00 /* Resources */,
+				478D0BBB97359FC23F222050 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProyectoPersonal;
+			packageProductDependencies = (
+				F1EEF4602746D00B00FF062D /* AudioPlayer */,
+			);
+			productName = ProyectoPersonal;
+			productReference = F1A45C132722F4BB00468C00 /* ProyectoPersonal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1A45C2B2722F4BF00468C00 /* ProyectoPersonalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A45C432722F4BF00468C00 /* Build configuration list for PBXNativeTarget "ProyectoPersonalTests" */;
+			buildPhases = (
+				1562D0A31056BD1D7C819B93 /* [CP] Check Pods Manifest.lock */,
+				F1A45C282722F4BF00468C00 /* Sources */,
+				F1A45C292722F4BF00468C00 /* Frameworks */,
+				F1A45C2A2722F4BF00468C00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A45C2E2722F4BF00468C00 /* PBXTargetDependency */,
+			);
+			name = ProyectoPersonalTests;
+			productName = ProyectoPersonalTests;
+			productReference = F1A45C2C2722F4BF00468C00 /* ProyectoPersonalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1A45C352722F4BF00468C00 /* ProyectoPersonalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A45C462722F4BF00468C00 /* Build configuration list for PBXNativeTarget "ProyectoPersonalUITests" */;
+			buildPhases = (
+				48C986F54440DD5C98EC80E2 /* [CP] Check Pods Manifest.lock */,
+				F1A45C322722F4BF00468C00 /* Sources */,
+				F1A45C332722F4BF00468C00 /* Frameworks */,
+				F1A45C342722F4BF00468C00 /* Resources */,
+				A783C8FE62B0D745F5CB0544 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A45C382722F4BF00468C00 /* PBXTargetDependency */,
+			);
+			name = ProyectoPersonalUITests;
+			productName = ProyectoPersonalUITests;
+			productReference = F1A45C362722F4BF00468C00 /* ProyectoPersonalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1A45C0B2722F4BB00468C00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					F1A45C122722F4BB00468C00 = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+					};
+					F1A45C2B2722F4BF00468C00 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = F1A45C122722F4BB00468C00;
+					};
+					F1A45C352722F4BF00468C00 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = F1A45C122722F4BB00468C00;
+					};
+				};
+			};
+			buildConfigurationList = F1A45C0E2722F4BB00468C00 /* Build configuration list for PBXProject "ProyectoPersonal" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1A45C0A2722F4BB00468C00;
+			packageReferences = (
+				F1EEF45F2746D00B00FF062D /* XCRemoteSwiftPackageReference "AudioPlayerSwift" */,
+			);
+			productRefGroup = F1A45C142722F4BB00468C00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1A45C122722F4BB00468C00 /* ProyectoPersonal */,
+				F1A45C2B2722F4BF00468C00 /* ProyectoPersonalTests */,
+				F1A45C352722F4BF00468C00 /* ProyectoPersonalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1A45C112722F4BB00468C00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1EEF42D273D9EB100FF062D /* animacion.gif in Resources */,
+				F1A45C262722F4BE00468C00 /* LaunchScreen.storyboard in Resources */,
+				F1EEF45B27443DA500FF062D /* ukulele.mp3 in Resources */,
+				F1EEF42F273DB0A700FF062D /* Assets.xcassets in Resources */,
+				F1A45C1E2722F4BB00468C00 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A45C2A2722F4BF00468C00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A45C342722F4BF00468C00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1562D0A31056BD1D7C819B93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProyectoPersonalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3049CAAD1A115A537154873E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProyectoPersonal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		478D0BBB97359FC23F222050 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProyectoPersonal/Pods-ProyectoPersonal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProyectoPersonal/Pods-ProyectoPersonal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProyectoPersonal/Pods-ProyectoPersonal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48C986F54440DD5C98EC80E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProyectoPersonal-ProyectoPersonalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A783C8FE62B0D745F5CB0544 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProyectoPersonal-ProyectoPersonalUITests/Pods-ProyectoPersonal-ProyectoPersonalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProyectoPersonal-ProyectoPersonalUITests/Pods-ProyectoPersonal-ProyectoPersonalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProyectoPersonal-ProyectoPersonalUITests/Pods-ProyectoPersonal-ProyectoPersonalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1A45C0F2722F4BB00468C00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19F9BED275556B800AA742F /* PlayListDetailController.swift in Sources */,
+				F1A45C1B2722F4BB00468C00 /* LoginViewController.swift in Sources */,
+				F1C474FB275E9303008D39D5 /* UIViewController+extension.swift in Sources */,
+				F1EEF42B273D9A5E00FF062D /* animatedGIF.m in Sources */,
+				F174C858276A9C68008063E1 /* UIView+extension.swift in Sources */,
+				F1FC23452729F17A004DF7EB /* RegisterViewController.swift in Sources */,
+				F1EEF490274D13C300FF062D /* CurrentSong.swift in Sources */,
+				F1EEF493274D6CEE00FF062D /* ButtonFunc.swift in Sources */,
+				F14BDDBC273567EC001B6A22 /* AudioPlayerViewController.swift in Sources */,
+				F1A6AEC1272C341900EFAFDD /* Modelos.swift in Sources */,
+				F1E2A8302734684B003CCB89 /* Protocols.swift in Sources */,
+				F19F9BEB27500D5100AA742F /* UILabel+extension.swift in Sources */,
+				F1EEF4662746E87300FF062D /* APIManager.swift in Sources */,
+				F1C474FD275EA4BD008D39D5 /* String+extension.swift in Sources */,
+				F1F395CF276918D500675E4C /* RestServiceManager.swift in Sources */,
+				F1E2A82E27331C6C003CCB89 /* TableViewController.swift in Sources */,
+				F1E2A83227348593003CCB89 /* TrackTableViewCell.swift in Sources */,
+				F1A45C172722F4BB00468C00 /* AppDelegate.swift in Sources */,
+				F19F9BEF27555E6300AA742F /* TracksPickerView.swift in Sources */,
+				F1A6AEBF272C216A00EFAFDD /* WelcomeViewController.swift in Sources */,
+				F1A45C212722F4BB00468C00 /* ProyectoPersonal.xcdatamodeld in Sources */,
+				F1B62B5C27628A7100A61F7F /* DownloadManager.swift in Sources */,
+				F174C854276A1713008063E1 /* Model.xcdatamodeld in Sources */,
+				F1EEF4632746D84500FF062D /* DataManager.swift in Sources */,
+				F174C85A276AB3E8008063E1 /* LoginViewModel.swift in Sources */,
+				F1A45C192722F4BB00468C00 /* SceneDelegate.swift in Sources */,
+				F19F9BE92750058E00AA742F /* UIButton+extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A45C282722F4BF00468C00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A45C312722F4BF00468C00 /* ProyectoPersonalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A45C322722F4BF00468C00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A45C3B2722F4BF00468C00 /* ProyectoPersonalUITests.swift in Sources */,
+				F1A45C3D2722F4BF00468C00 /* ProyectoPersonalUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1A45C2E2722F4BF00468C00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1A45C122722F4BB00468C00 /* ProyectoPersonal */;
+			targetProxy = F1A45C2D2722F4BF00468C00 /* PBXContainerItemProxy */;
+		};
+		F1A45C382722F4BF00468C00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1A45C122722F4BB00468C00 /* ProyectoPersonal */;
+			targetProxy = F1A45C372722F4BF00468C00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1A45C1C2722F4BB00468C00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1A45C1D2722F4BB00468C00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1A45C242722F4BE00468C00 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1A45C252722F4BE00468C00 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1A45C3E2722F4BF00468C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1A45C3F2722F4BF00468C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1A45C412722F4BF00468C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFC573476F387867A20D600E /* Pods-ProyectoPersonal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3N4N32965P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProyectoPersonal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = asd.ProyectoPersonal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ProyectoPersonal/ProyectoPersonal-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F1A45C422722F4BF00468C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F12BAF4CE7E36CD783580A08 /* Pods-ProyectoPersonal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3N4N32965P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProyectoPersonal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = asd.ProyectoPersonal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ProyectoPersonal/ProyectoPersonal-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F1A45C442722F4BF00468C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33910A908AC887D9C12CFD1B /* Pods-ProyectoPersonalTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3N4N32965P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = asd.ProyectoPersonalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProyectoPersonal.app/ProyectoPersonal";
+			};
+			name = Debug;
+		};
+		F1A45C452722F4BF00468C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F3F9677535E768CAB523A1D /* Pods-ProyectoPersonalTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3N4N32965P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = asd.ProyectoPersonalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProyectoPersonal.app/ProyectoPersonal";
+			};
+			name = Release;
+		};
+		F1A45C472722F4BF00468C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C141764AEA38105E27AC18 /* Pods-ProyectoPersonal-ProyectoPersonalUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3N4N32965P;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = asd.ProyectoPersonalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProyectoPersonal;
+			};
+			name = Debug;
+		};
+		F1A45C482722F4BF00468C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C392E32FE68C547CE0D1BF /* Pods-ProyectoPersonal-ProyectoPersonalUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3N4N32965P;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = asd.ProyectoPersonalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProyectoPersonal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1A45C0E2722F4BB00468C00 /* Build configuration list for PBXProject "ProyectoPersonal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A45C3E2722F4BF00468C00 /* Debug */,
+				F1A45C3F2722F4BF00468C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A45C402722F4BF00468C00 /* Build configuration list for PBXNativeTarget "ProyectoPersonal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A45C412722F4BF00468C00 /* Debug */,
+				F1A45C422722F4BF00468C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A45C432722F4BF00468C00 /* Build configuration list for PBXNativeTarget "ProyectoPersonalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A45C442722F4BF00468C00 /* Debug */,
+				F1A45C452722F4BF00468C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A45C462722F4BF00468C00 /* Build configuration list for PBXNativeTarget "ProyectoPersonalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A45C472722F4BF00468C00 /* Debug */,
+				F1A45C482722F4BF00468C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1EEF45F2746D00B00FF062D /* XCRemoteSwiftPackageReference "AudioPlayerSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tbaranes/AudioPlayerSwift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1EEF4602746D00B00FF062D /* AudioPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1EEF45F2746D00B00FF062D /* XCRemoteSwiftPackageReference "AudioPlayerSwift" */;
+			productName = AudioPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		F174C852276A1713008063E1 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F174C853276A1713008063E1 /* Model.xcdatamodel */,
+			);
+			currentVersion = F174C853276A1713008063E1 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		F1A45C1F2722F4BB00468C00 /* ProyectoPersonal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F1A45C202722F4BB00468C00 /* ProyectoPersonal.xcdatamodel */,
+			);
+			currentVersion = F1A45C202722F4BB00468C00 /* ProyectoPersonal.xcdatamodel */;
+			path = ProyectoPersonal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F1A45C0B2722F4BB00468C00 /* Project object */;
+}
